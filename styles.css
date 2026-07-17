@@ -70,7 +70,7 @@ footer{padding:12px 20px 28px;color:#91a0af;font-size:11px;text-align:center}
 }
 
 /* 品牌 Logo 与五项服务模块 */
-.brand{margin-bottom:38px}
-.brand img{display:block;width:220px;max-width:68vw;height:auto}
+.brand{justify-content:flex-start;margin-bottom:38px}
+.brand img{display:block;width:160px;max-width:52vw;height:auto}
 .services{grid-template-columns:repeat(5,1fr)}
-@media(max-width:760px){.services{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.brand img{width:145px}.services{grid-template-columns:repeat(2,1fr)}}

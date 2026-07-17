@@ -17,7 +17,7 @@
     button.disabled = true;
     button.innerHTML = "正在提交…";
     var data = new FormData(form);
-    data.append("_subject", "【公众号】新的科研项目需求");
+    data.append("_subject", "【公众号】新的实验项目需求");
     data.append("_template", "table");
     data.append("_captcha", "false");
     try {

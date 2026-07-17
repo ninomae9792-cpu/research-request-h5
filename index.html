@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#082d59">
+  <meta name="format-detection" content="telephone=no">
+  <title>科研需求提交｜派思维新医药</title>
+  <meta name="description" content="提交您的科研项目需求，派思维新医药专业技术团队将在1个工作日内与您联系。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="formPage">
+    <header class="hero">
+      <div class="hero-content">
+        <div class="brand"><b>P</b><span>派思维新医药</span></div>
+        <p class="eyebrow">RESEARCH SERVICE REQUEST</p>
+        <h1>科研需求提交</h1>
+        <p class="intro">填写您的项目需求，我们将安排专业团队与您沟通，为您的科研项目提供技术支持。</p>
+        <div class="services"><span>🧬 分子实验</span><span>🔬 细胞实验</span><span>🦠 病毒相关实验</span><span>💊 药效评价研究</span></div>
+        <p class="privacy">✓ 信息仅用于项目沟通，我们将严格保护您的隐私</p>
+      </div>
+    </header>
+
+    <form id="requestForm" class="form-shell">
+      <section class="card">
+        <div class="section-title"><i>01</i><div><h2>客户信息</h2><p>请留下您的基本信息，便于我们与您取得联系</p></div></div>
+        <div class="field-grid">
+          <label class="field"><b>姓名 <em>*</em></b><input name="姓名" autocomplete="name" placeholder="请输入您的姓名" required></label>
+          <label class="field"><b>单位名称 <em>*</em></b><input name="单位名称" autocomplete="organization" placeholder="请输入高校/企业/医院/研究机构名称" required></label>
+          <label class="field"><b>联系方式 <em>*</em></b><input name="联系方式" type="tel" inputmode="numeric" autocomplete="tel" placeholder="请输入手机号码" required></label>
+          <label class="field"><b>邮箱</b><input name="邮箱" type="email" inputmode="email" autocomplete="email" placeholder="请输入邮箱（选填）"></label>
+        </div>
+        <fieldset><legend>您的身份 <em>*</em></legend><div class="choices">
+          <label><input type="radio" name="您的身份" value="高校科研人员" required><span></span>高校科研人员</label>
+          <label><input type="radio" name="您的身份" value="企业研发人员"><span></span>企业研发人员</label>
+          <label><input type="radio" name="您的身份" value="医院科研人员"><span></span>医院科研人员</label>
+          <label><input type="radio" name="您的身份" value="其他"><span></span>其他</label>
+        </div></fieldset>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><i>02</i><div><h2>实验需求信息</h2><p>信息越完整，我们越能快速为您匹配合适的技术团队</p></div></div>
+        <fieldset><legend>项目类型 <em>*</em> <small>（可多选）</small></legend><div class="choices checks">
+          <label><input type="checkbox" name="项目类型" value="分子实验"><span></span>分子实验</label>
+          <label><input type="checkbox" name="项目类型" value="细胞实验"><span></span>细胞实验</label>
+          <label><input type="checkbox" name="项目类型" value="病毒相关实验"><span></span>病毒相关实验</label>
+          <label><input type="checkbox" name="项目类型" value="微生物实验"><span></span>微生物实验</label>
+          <label><input type="checkbox" name="项目类型" value="药效评价"><span></span>药效评价</label>
+          <label><input type="checkbox" name="项目类型" value="动物实验"><span></span>动物实验</label>
+          <label><input type="checkbox" name="项目类型" value="检测分析"><span></span>检测分析</label>
+          <label><input type="checkbox" name="项目类型" value="其他"><span></span>其他</label>
+        </div></fieldset>
+        <label class="field"><b>实验需求描述 <em>*</em></b><small>请描述您的研究方向、实验目标、目前需求或遇到的问题。</small><textarea name="实验需求描述" rows="7" placeholder="例如：&#10;研究方向：&#10;实验内容：&#10;样本情况：&#10;预计开展时间：" required></textarea></label>
+        <fieldset><legend>项目预计启动时间 <em>*</em></legend><div class="choices">
+          <label><input type="radio" name="项目预计启动时间" value="1个月内" required><span></span>1个月内</label>
+          <label><input type="radio" name="项目预计启动时间" value="1-3个月"><span></span>1-3个月</label>
+          <label><input type="radio" name="项目预计启动时间" value="3个月以上"><span></span>3个月以上</label>
+          <label><input type="radio" name="项目预计启动时间" value="暂未确定"><span></span>暂未确定</label>
+        </div></fieldset>
+        <fieldset><legend>是否需要技术方案咨询 <em>*</em></legend><div class="choices">
+          <label><input type="radio" name="是否需要技术方案咨询" value="已有实验方案" required><span></span>已有实验方案</label>
+          <label><input type="radio" name="是否需要技术方案咨询" value="需要技术方案设计"><span></span>需要技术方案设计</label>
+          <label><input type="radio" name="是否需要技术方案咨询" value="暂不确定"><span></span>暂不确定</label>
+        </div></fieldset>
+      </section>
+      <p id="error" class="error" role="alert"></p>
+      <button id="submitButton" type="submit">提交需求 <span>→</span></button>
+      <p class="submit-note">提交即表示您同意我们仅将以上信息用于本次项目沟通</p>
+    </form>
+    <footer>© 2026 派思维新医药 · 专业生物医药技术服务</footer>
+  </main>
+
+  <main id="successPage" class="success-page" hidden>
+    <section class="success-card"><div class="success-mark">✓</div><p class="eyebrow">SUBMISSION RECEIVED</p><h1>感谢您的提交！</h1><p>我们的技术团队将在1个工作日内与您联系。</p><hr><small>派思维新医药 · 为科研提供可靠技术支持</small><button id="againButton" type="button">继续提交其他需求</button></section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

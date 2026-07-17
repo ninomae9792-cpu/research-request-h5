@@ -50,6 +50,17 @@
           <label><input type="checkbox" name="项目类型" value="其他"><span></span>其他</label>
         </div></fieldset>
         <label class="field"><b>实验需求描述 <em>*</em></b><small>请描述您的研究方向、实验目标、目前需求或遇到的问题。</small><textarea name="实验需求描述" rows="7" placeholder="例如：&#10;需求动物模型类型：" required></textarea></label>
+        <fieldset><legend>项目预计启动时间 <em>*</em></legend><div class="choices">
+          <label><input type="radio" name="项目预计启动时间" value="1个月内" required><span></span>1个月内</label>
+          <label><input type="radio" name="项目预计启动时间" value="1-3个月"><span></span>1-3个月</label>
+          <label><input type="radio" name="项目预计启动时间" value="3个月以上"><span></span>3个月以上</label>
+          <label><input type="radio" name="项目预计启动时间" value="暂未确定"><span></span>暂未确定</label>
+        </div></fieldset>
+        <fieldset><legend>是否需要技术方案咨询 <em>*</em></legend><div class="choices">
+          <label><input type="radio" name="是否需要技术方案咨询" value="已有实验方案" required><span></span>已有实验方案</label>
+          <label><input type="radio" name="是否需要技术方案咨询" value="需要技术方案设计"><span></span>需要技术方案设计</label>
+          <label><input type="radio" name="是否需要技术方案咨询" value="暂不确定"><span></span>暂不确定</label>
+        </div></fieldset>
       </section>
       <p id="error" class="error" role="alert"></p>
       <button id="submitButton" type="submit">提交需求 <span>→</span></button>

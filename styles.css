@@ -69,8 +69,9 @@ footer{padding:12px 20px 28px;color:#91a0af;font-size:11px;text-align:center}
 @media(max-width:350px){.choices,.checks{grid-template-columns:1fr}
 }
 
-/* 品牌 Logo 与五项服务模块 */
-.brand{justify-content:flex-start;margin-bottom:38px}
-.brand img{display:block;width:160px;max-width:52vw;height:auto}
+/* 左上角文字品牌与五项服务模块 */
+.brand-text{display:flex;flex-direction:column;align-items:flex-start;width:max-content;margin-bottom:38px;line-height:1}
+.brand-text strong{color:#f4fbff;font-family:"STKaiti","KaiTi","Songti SC",serif;font-size:22px;font-weight:700;letter-spacing:.16em;text-shadow:0 1px 10px rgba(91,204,238,.18)}
+.brand-text span{margin-top:7px;color:#66d8e8;font-family:Georgia,"Times New Roman",serif;font-size:17px;font-style:italic;font-weight:600;letter-spacing:.035em}
 .services{grid-template-columns:repeat(5,1fr)}
-@media(max-width:760px){.brand img{width:145px}.services{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.brand-text strong{font-size:20px}.brand-text span{font-size:16px}.services{grid-template-columns:repeat(2,1fr)}}
